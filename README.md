@@ -11,22 +11,22 @@ Our project is a non-invasive glucose monitoring prototype that uses GSR (Galvan
 ![image](https://github.com/user-attachments/assets/f104be34-35f8-4540-ac61-859a240da887)
 
 ## Hardware Components: 
-Grove GSR Sensor- Measures skin conductance and outputs analog signals reflecting moisture levels
-GrovePi+ board- analog-to-digital interface, converts the GSR sensor’s analog data into digital values over the I2C protocol.
-Raspberry Pi 4B- collects data via I2C, runs the machine learning classifier, and hosts Flask-based HTTP server.
-Laptop (client)- Connects via HTTP over Wi-Fi to the Flask server and initiates classification requests through a simple web interface.
+- Grove GSR Sensor- Measures skin conductance and outputs analog signals reflecting moisture levels
+- GrovePi+ board- analog-to-digital interface, converts the GSR sensor’s analog data into digital values over the I2C protocol.
+- Raspberry Pi 4B- collects data via I2C, runs the machine learning classifier, and hosts Flask-based HTTP server.
+- Laptop (client)- Connects via HTTP over Wi-Fi to the Flask server and initiates classification requests through a simple web interface.
 
 ## Software Components:
-measure.py: GSR data collection from GrovePi, saves 100 data points to .csv
-classifier.py: trains Decision Tree Classifier (supervised learning ML algorithm) using scikit-learn
-main.py: performs prediction on new GSR data, prints most common predicted state 
-app.py: Flask server, provides REST API for client to start GSR measurement (POST) and check classification result (GET)
+- measure.py: GSR data collection from GrovePi, saves 100 data points to .csv
+- classifier.py: trains Decision Tree Classifier (supervised learning ML algorithm) using scikit-learn
+- main.py: performs prediction on new GSR data, prints most common predicted state 
+- app.py: Flask server, provides REST API for client to start GSR measurement (POST) and check classification result (GET)
 
 ## Data Results:
-Label	           Kaylee Range	Jason Range
-Resting	 	365–387	222–270
-Sweat	             265–314	99–127
-After Sugar	 450–475	311–343
+Label	       Kaylee Range	Jason Range
+Resting	 	    365–387	   222–270
+Sweat	         265–314	  99–127
+After Sugar	   450–475	  311–343
 
 Outliers were removed for accurate/consistent data. 
 

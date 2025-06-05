@@ -1,4 +1,4 @@
-#SWEADY - Non-Invasive Glucose Monitoring
+# SWEADY - Non-Invasive Glucose Monitoring
 
 ## Motivation
 Many individuals with diabetes or high blood sugar must prick their fingertips multiple times a day to monitor their glucose levels. This process is not only painful and inconvenient, but can also lead to long-term issues such as callous formation, scarring, or loss of fingertip sensitivity.

@@ -23,9 +23,13 @@ Our project is a non-invasive glucose monitoring prototype that uses GSR (Galvan
 - app.py: Flask server, provides REST API for client to start GSR measurement (POST) and check classification result (GET)
 
 ## Data Results:
+
 Label	       Kaylee Range	Jason Range
+
 Resting	 	    365–387	   222–270
+
 Sweat	         265–314	  99–127
+
 After Sugar	   450–475	  311–343
 
 Outliers were removed for accurate/consistent data. 
